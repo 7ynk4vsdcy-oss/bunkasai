@@ -1,0 +1,78 @@
+/* ギャラリーセクションのスタイル */
+.gallery-section {
+  background-color: #f0f5f5; /* ソフトな背景色 */
+  padding: 50px 0;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Mochiy Pop P One', sans-serif; /* ジブリ風のフォント */
+  font-size: 36px;
+  color: #4e9f8f; /* 緑色で温かみを演出 */
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .overlay {
+  opacity: 1;
+}
+
+.caption {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  color: white;
+  font-size: 18px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+.gallery-item {
+  background-color: #A8D08D; /* ジブリ風のグリーン */
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item p {
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: 20px;
+}
